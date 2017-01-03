@@ -2,6 +2,8 @@
   "name": "wellness-challenge",
   "dependencies": {
     "ember": "~2.8.0",
-    "ember-cli-shims": "0.1.1"
+    "ember-cli-shims": "0.1.1",
+    "auth0-lock": "9.2.3",
+    "jsrsasign": "jsrsasign#5.0.1"
   }
 }
