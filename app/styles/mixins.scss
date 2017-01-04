@@ -1,0 +1,11 @@
+@import 'variables';
+
+@mixin clear() {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin nav-icon($svg) {
+  background-image: url($svg);
+  background-position: center;
+}

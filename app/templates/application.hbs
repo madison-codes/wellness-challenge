@@ -1,21 +1,19 @@
-<h1 id="title">Welcome to Auth0 Ember Simple Auth</h1>
-
 <header>
-  {{#link-to "index"}}<img class="logo">{{/link-to}}
-
-  <nav>
-    {{#link-to "home"}}Home{{/link-to}}
-    {{#link-to "calendar"}}Calendar{{/link-to}}
-    {{#link-to "dashboard"}}Dashboard{{/link-to}}
-    {{#link-to "profile"}}Profile{{/link-to}}
-
-
-  </nav>
-</header>
-  {{outlet}}
-<footer>
+  <h1 id="title-main">wellness</h1>
   {{#if session.isAuthenticated}}
-    <h3>You are currently logged as: {{session.data.authenticated.profile.email}}</h3>
-    <a href="#" {{action 'logout'}}>Logout</a>
+    <p class="auth login" {{action 'logout'}}>Logout →</p>
+  {{else}}
+    <p class="auth logout" {{action 'login'}}>Login →</p>
   {{/if}}
+</header>
+<body>
+  {{outlet}}
+</body>
+<footer>
+  <nav>
+    <div class="nav-link home-link">{{#link-to  "home"}}Home{{/link-to}}</div>
+    <div class="nav-link cal-link">{{#link-to "calendar"}}Calendar{{/link-to}}</div>
+    <div class="nav-link dash-link">{{#link-to "dashboard"}}Dashboard{{/link-to}}</div>
+    <div class="nav-link profile-link">{{#link-to "profile"}}Profile{{/link-to}}</div>
+  </nav>
 </footer>

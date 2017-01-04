@@ -1,5 +1,9 @@
-<div>
+<section>
+  {{#if session.isAuthenticated}}
+    <h3>You are currently logged as: {{session.data.authenticated.profile.email}}</h3>
+    <a href="#" {{action 'logout'}}>→</a>
+  {{/if}}
   <h1>profile</h1>
-</div>
+</section>
 
 {{outlet}}
