@@ -1,7 +1,7 @@
 import PouchDB from 'pouchdb';
 import { Adapter } from 'ember-pouch';
 
-var remote = new PouchDB('https://ab255.cloudant.com/_wellness');
+var remote = new PouchDB('https://ab255.cloudant.com/wellness');
 var db = new PouchDB('local_pouch');
 
 db.sync(remote, {
