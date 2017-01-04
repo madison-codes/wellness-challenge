@@ -1,7 +1,14 @@
-body {
-  background-color: pink;
+@import 'variables';
+@import 'mixins';
+@import 'header';
+@import 'footer';
+
+html {
+  @include clear();
+  font-family: 'Alegreya Sans', sans-serif;
 }
 
-h1 {
-  font-size: 3rem;
+body {
+  @include clear();
+  position: relative;
 }

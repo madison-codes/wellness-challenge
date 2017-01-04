@@ -1,0 +1,23 @@
+@import 'variables';
+@import 'mixins';
+
+footer {
+  height: 54px;
+  width: 100vw;
+  bottom: 0;
+  position: fixed;
+  margin: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 87vw;
+}
+
+.nav-link {
+  background-position: center;
+  height: 50px;
+  width: 50px;
+}
