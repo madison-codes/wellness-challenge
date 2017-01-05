@@ -66,7 +66,7 @@ module.exports = function(environment) {
 
   ENV.contentSecurityPolicy = {
     "connect-src": "'self' https://ab255.cloudant.com/wellness"
-  }
+  };
 
   return ENV;
 };
