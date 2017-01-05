@@ -1,5 +1,1 @@
-<div>
-  <h1>home</h1>
-  {{outlet}}
-  {{task-form}}
-</div>
+{{#task-form tasks=model createAction="submitTasks"}}{{outlet}}{{/task-form}}
