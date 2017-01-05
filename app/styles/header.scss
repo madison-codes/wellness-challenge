@@ -1,24 +1,43 @@
 @import 'variables';
 @import 'mixins';
 
-.auth {
-  padding-right: 20px;
-}
+// .auth {
+//   padding-right: 20px;
+//   cursor: pointer;
+// }
 
 header {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
-  padding-bottom: 10px;
+  align-items: center;
   width: 100vw;
-  height: 60px;
+  height: 70px;
   background-color: $color-main;
   color: white;
+}
+
+.logo {
+  height: 65px;
+  margin-left: 20px;
 }
 
 #title-main {
   margin: auto;
   font-size: 1.5rem;
-  padding-left: 70px;
-  padding-top: 10px;
+}
+
+button {
+  background: $color-pop-three;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
+  // font-family: ShreeDev0714-Bold;
+  font-size: 18px;
+  color: #FFFFFF;
+  cursor: pointer;
+  margin-right: 20px;
+  &:hover {
+    background: #FFFFFF;
+    border: 2px solid $color-pop-three;
+    color: $color-pop-three;
+  }
 }
