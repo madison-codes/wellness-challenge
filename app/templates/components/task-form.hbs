@@ -1,6 +1,9 @@
 <div>
   <h1>home</h1>
-  <form class="" {{action 'submitTasks' model on='submit'}}>
+  <form class="" {{action 'createAction' model on='submit'}}>
+
+
+
     <label>Sweat
       {{ input type="checkbox" name="sweat" checked=sweat }}
     </label>
@@ -15,5 +18,9 @@
     </label>
     <button>Submit</button>
   </form>
+  <form class="" {{action 'getTasks' model on='submit'}}>
+    <button>Submit</button>
+  </form>
+
   {{outlet}}
 </div>
