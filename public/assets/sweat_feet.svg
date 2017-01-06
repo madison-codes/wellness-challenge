@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="37px" height="41px" viewBox="0 0 37 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>foot_steps_feet</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect x="34" y="151" width="55" height="55" id="rect-1"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-Portrait" transform="translate(-40.000000, -156.000000)">
+            <g id="foot_steps_feet">
+                <image x="34" y="151" width="55" height="55" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAA1teXP8meAAAAmFJREFUWAntl79qFVEQxi9RAlaCVSBtQBAEwQe4VaqAXZpAXsJK8BkEQRC0WRACBkFQrARhIW1CQtpARBAEQcFGCUT0+yU7cBjPHDa794/KDnzOmZkzc+bO2S+7jkaDDBP4/yawpZ+08zf/rC9q7pdwRXgp1EJnudw5M07cVmhZ+CF8Ey4JyItzNVpv9FzVkk4fC9eTLp5rDeYut9TBicA1g7dC2mgte1ewyWoZy0Ic6hy5o8zFJHtV60PhXuP7KQ2mLjAVxnq5L4dNz+tKsbR5n9vbrlUBZnIIh8NYLzfl8I2l9qsm4ZlP7GrDPmMgxZkCwvrx2erPf/gRaVN+van4xCbp2ccDPxZgaiQ3FDgVfGNmQ5JeAsMoUidVaAxG2iEwFcZG8kQB2+v19yjJ+0ssTtkGA2EijDThimBsJE+jgPxfC7ELhWiiEvwEzIaxkXALts/rR1FSW3/VbIQIvnhql66Y5zDda+vP8l9r6ndWTA6mWdGchqklgfm5vLulpIvE9oMDOBSGpq8vX3ejkLviN3e10/epnwQMjYTrs08un0fNVu/gqHjq/yjDH2D27XSjWz8s5B27vb1MmGYNeV2awlEh712vjlwyVwXjfHPYMDSS0uQfREld/TAu16C9m3N13wQ51BnnEvr4YFyuQXwwNSdM94Pg8yZ6vXYwz1r00oepPAY54UOC66TRT0IlXBWmIjDPT8NsGDtVKX0s2MHvbZHRaxnfRF1tGjwonMj/facqbRp8XehgrxCbaQgG2nNnGgKU/h7OtEEYWAkwksZgaOmTX+FBhgkMExgm8E9M4Dd4BvjtxVBoNwAAAABJRU5ErkJggg=="></image>
+                <use fill="#FF8B3A" fill-rule="evenodd" xlink:href="#rect-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>
