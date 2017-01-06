@@ -1,19 +1,43 @@
 <header>
-  <h1 id="title-main">wellness</h1>
-  {{#if session.isAuthenticated}}
-    <p class="auth login" {{action 'logout'}}>Logout →</p>
-  {{else}}
-    <p class="auth logout" {{action 'login'}}>Login →</p>
-  {{/if}}
+  <section class="mobile-container">
+    <img src="./assets/info.svg" alt="Info" class="info">
+    <section class="title-container">
+      <img src="./assets/turing-logo.png" alt="Turing Logo" class="logo">
+      <h1 id="title-main">wellness</h1>
+    </section>
+    {{#if session.isAuthenticated}}
+    {{!-- <p class="auth login" {{action 'logout'}}>Logout →</p> --}}
+    <button class="auth login" {{action 'logout'}}>Logout</button>
+    {{else}}
+    {{!-- <p class="auth logout" {{action 'login'}}>Login →</p> --}}
+    <button class="auth logout" {{action 'login'}}>Login</button>
+    {{/if}}
+  </section>
 </header>
 <body>
   {{outlet}}
 </body>
 <footer>
   <nav>
-    <div class="nav-link home-link">{{#link-to  "home"}}Home{{/link-to}}</div>
-    <div class="nav-link cal-link">{{#link-to "calendar"}}Calendar{{/link-to}}</div>
-    <div class="nav-link dash-link">{{#link-to "dashboard"}}Dashboard{{/link-to}}</div>
-    <div class="nav-link profile-link">{{#link-to "profile"}}Profile{{/link-to}}</div>
+    <div class="nav-link home-link">
+      {{#link-to "home"}}
+        <img src="./assets/list.svg" alt="Home">
+      {{/link-to}}
+    </div>
+    <div class="nav-link cal-link">
+      {{#link-to "calendar"}}
+        <img src="./assets/calendar.svg" alt="Calendar">
+      {{/link-to}}
+    </div>
+    <div class="nav-link dash-link">
+      {{#link-to "dashboard"}}
+        <img src="./assets/dashboard.svg" alt="Dashboard">
+      {{/link-to}}
+    </div>
+    <div class="nav-link profile-link">
+      {{#link-to "profile"}}
+        <img src="./assets/profile.svg" alt="Profile">
+      {{/link-to}}
+    </div>
   </nav>
 </footer>
