@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   actions: {
-    createAction: function() {
+    updateTasks: function() {
       var tasks = {
         sweat: this.get('sweat') ? 1 : 0,
         rest: this.get('rest') ? 1 : 0,
