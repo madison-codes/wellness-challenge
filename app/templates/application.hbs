@@ -6,10 +6,8 @@
       <h1 id="title-main">wellness</h1>
     </section>
     {{#if session.isAuthenticated}}
-    {{!-- <p class="auth login" {{action 'logout'}}>Logout →</p> --}}
-    <button class="auth login" {{action 'logout'}}>Logout</button>
+      <button class="auth login" {{action 'logout'}}>Logout</button>
     {{else}}
-    {{!-- <p class="auth logout" {{action 'login'}}>Login →</p> --}}
     <button class="auth logout" {{action 'login'}}>Login</button>
     {{/if}}
   </section>
