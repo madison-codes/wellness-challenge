@@ -2,18 +2,17 @@
   <h1>home</h1>
   <form class="" {{action 'submitTasks' model on='submit'}}>
     <label>Sweat
-      {{ input type="text" value=title }}
+      {{ input type="checkbox" name="sweat" checked=sweat }}
     </label>
-    <!-- <label>Rest
-      {{ input type="checkbox" checked=1 }}
-    </label> -->
-    <!-- <label>Nutrition
-      {{ input type="checkbox" value=nutrition }}
+    <label>Rest
+      {{ input type="checkbox" name="rest" checked=rest }}
+    </label>
+    <label>Nutrition
+      {{ input type="checkbox" name="nutrition" checked=nutrition }}
     </label>
     <label>Personal Wellness
-      {{ input type="checkbox" value=personal }}
-    </label> -->
-    <!-- <input type="submit" value="Submit"> -->
+      {{ input type="checkbox" name="personalWellness" checked=personalWellness }}
+    </label>
     <button>Submit</button>
   </form>
   {{outlet}}

@@ -5,11 +5,18 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
   actions: {
     submitTasks(){
       var tasks = this.store.createRecord("task", {
-        title: this.get('title')
+        sweat: this.get('sweat'),
+        rest: this.get('rest'),
+        nutrition: this.get('nutrition'),
+        personalWellness: this.get('personalWellness')
       });
-      tasks.save();
+      console.log(this.get('sweat'))
+      // tasks.save();
 
-      this.set('title', '');
+      this.set('sweat', false);
+      this.set('rest', false);
+      this.set('nutrition', false);
+      this.set('personalWellness', false);
     }
   }
 });
