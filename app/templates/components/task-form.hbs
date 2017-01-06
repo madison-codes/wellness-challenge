@@ -1,5 +1,5 @@
 <div>
-  <form class="task-form" {{action 'submitTasks' model on='submit'}}>
+  <form class="task-form" {{action 'updateTasks' model on='submit'}}>
     <label class="task">
       {{ input type="checkbox" class="checks" name="sweat" checked=sweat }}
       Sweat
@@ -22,5 +22,9 @@
     </label>
     <button class="submit-button">Submit</button>
   </form>
+  <form class="" {{action 'getTasks' model on='submit'}}>
+    <button>Submit</button>
+  </form>
+
   {{outlet}}
 </div>
