@@ -1,13 +1,18 @@
 <header>
-  <img src="./assets/turing-logo.png" alt="Turing Logo" class="logo">
-  <h1 id="title-main">wellness</h1>
-  {{#if session.isAuthenticated}}
+  <section class="mobile-container">
+    <img src="./assets/info.svg" alt="Info" class="info">
+    <section class="title-container">
+      <img src="./assets/turing-logo.png" alt="Turing Logo" class="logo">
+      <h1 id="title-main">wellness</h1>
+    </section>
+    {{#if session.isAuthenticated}}
     {{!-- <p class="auth login" {{action 'logout'}}>Logout →</p> --}}
     <button class="auth login" {{action 'logout'}}>Logout</button>
-  {{else}}
+    {{else}}
     {{!-- <p class="auth logout" {{action 'login'}}>Login →</p> --}}
     <button class="auth logout" {{action 'login'}}>Login</button>
-  {{/if}}
+    {{/if}}
+  </section>
 </header>
 <body>
   {{outlet}}

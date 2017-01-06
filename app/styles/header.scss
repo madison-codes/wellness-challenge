@@ -1,11 +1,6 @@
 @import 'variables';
 @import 'mixins';
 
-// .auth {
-//   padding-right: 20px;
-//   cursor: pointer;
-// }
-
 header {
   display: flex;
   flex-direction: row;
@@ -13,31 +8,68 @@ header {
   width: 100vw;
   height: 70px;
   background-color: $color-main;
+  // @media screen and (max-width: 400px) {
+  //   justify-content: space-between;
+  // }
+}
+
+.mobile-container {
+  display: flex;
+  align-items: center;
+  width: 100vw;
   color: white;
+  margin: auto;
+  @media screen and (max-width: 400px) {
+    justify-content: space-between;
+    width: 90%
+  }
+}
+
+.info {
+  height: 35px;
+  margin-left: 20px;
+  @media screen and (max-width: 400px) {
+    margin-left: 0;
+  }
+}
+
+.title-container {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-items: center;
 }
 
 .logo {
-  height: 65px;
-  margin-left: 20px;
+  height: 60px;
+  margin-right: 20px;
+  @media screen and (max-width: 400px) {
+    margin-right: 0;
+  }
 }
 
 #title-main {
-  margin: auto;
-  font-size: 1.5rem;
+  font-weight: 100;
+  font-size: 2em;
+  margin: 0;
 }
 
-button {
+.auth {
   background: $color-pop-three;
-  border: 2px solid #FFFFFF;
+  border: 2px solid white;
   border-radius: 5px;
   // font-family: ShreeDev0714-Bold;
   font-size: 18px;
-  color: #FFFFFF;
+  font-weight: 100;
+  color: white;
   cursor: pointer;
   margin-right: 20px;
   &:hover {
-    background: #FFFFFF;
+    background: white;
     border: 2px solid $color-pop-three;
     color: $color-pop-three;
+  }
+  @media screen and (max-width: 400px) {
+    margin-right: 0;
   }
 }

@@ -1,0 +1,50 @@
+@import 'variables';
+@import 'mixins';
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 30px;
+  width: 350px;
+}
+
+.checks {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.task {
+  // border: 1px solid grey;
+  width: 350px;
+  height: 50px;
+  font-size: 2em;
+  font-weight: 100;
+  align-items: center;
+  color: $color-pop-six;
+}
+
+.task-icons {
+  height: 25px;
+  margin-left: 20px;
+}
+
+.submit-button {
+  background: $color-pop-three;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 100;
+  color: white;
+  cursor: pointer;
+  width: 75px;
+  height: 30px;
+  margin: auto;
+  margin-top: 10px;
+  &:hover {
+    background: white;
+    border: 2px solid $color-pop-three;
+    color: $color-pop-three;
+  }
+}
