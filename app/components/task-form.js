@@ -9,17 +9,7 @@ export default Ember.Component.extend({
         nutrition: this.get('nutrition') ? 1 : 0,
         personalWellness: this.get('personalWellness') ? 1 : 0
       };
-      console.log('Component');
-      console.log(tasks);
-
-
-        // console.log(this.get('sweat'))
-        // tasks.save();
-
-      this.sendAction('submitTasks');
-    },
-    getTasks: function(){
-      console.log('firing');
+      this.sendAction('createAction', tasks);
     }
   }
 });
