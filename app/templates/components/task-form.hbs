@@ -1,0 +1,26 @@
+<div>
+  <h1>home</h1>
+  <form class="" {{action 'updateTasks' model on='submit'}}>
+
+
+
+    <label>Sweat
+      {{ input type="checkbox" name="sweat" checked=sweat }}
+    </label>
+    <label>Rest
+      {{ input type="checkbox" name="rest" checked=rest }}
+    </label>
+    <label>Nutrition
+      {{ input type="checkbox" name="nutrition" checked=nutrition }}
+    </label>
+    <label>Personal Wellness
+      {{ input type="checkbox" name="personalWellness" checked=personalWellness }}
+    </label>
+    <button>Submit</button>
+  </form>
+  <form class="" {{action 'getTasks' model on='submit'}}>
+    <button>Submit</button>
+  </form>
+
+  {{outlet}}
+</div>

@@ -7,6 +7,7 @@ module.exports = function(environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+
     EmberENV: {
       FEATURES: {
       // Here you can enable experimental features on an ember canary build
@@ -51,7 +52,11 @@ module.exports = function(environment) {
     ENV.APP.rootElement = '#ember-testing';
   }
 
+  ENV.remote_couch = 'https://ab255.cloudant.com/wellness';
+  ENV.local_couch = 'wellness';
   if (environment === 'production') {
+    ENV.rootURL = '/';
+    ENV.remote_couch = 'https://ab255.cloudant.com/wellness';
     ENV['ember-simple-auth'] = {
       authenticationRoute: 'index',
       routeAfterAuthentication: 'home',
@@ -63,6 +68,10 @@ module.exports = function(environment) {
       domain: auth0.DOMAIN
     };
   }
+
+  ENV.contentSecurityPolicy = {
+    "connect-src": "'self' https://ab255.cloudant.com/wellness"
+  };
 
   return ENV;
 };
