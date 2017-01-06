@@ -7,7 +7,6 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
   },
   actions: {
     submitTasks: function(tasks){
-      console.log(tasks);
       var updatedTasks = this.store.createRecord('task', tasks);
       updatedTasks.save();
     }
