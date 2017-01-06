@@ -10,10 +10,6 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
       console.log(tasks);
       var updatedTasks = this.store.createRecord('task', tasks);
       updatedTasks.save();
-      // this.set('sweat', true);
-      // this.set('rest', true);
-      // this.set('nutrition', true);
-      // this.set('personalWellness', true);
     }
   }
 });
