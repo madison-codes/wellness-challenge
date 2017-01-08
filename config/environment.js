@@ -1,5 +1,4 @@
 /* jshint node: true */
-let auth0 = require('../app/auth0-vars');
 
 module.exports = function(environment) {
   var ENV = {
