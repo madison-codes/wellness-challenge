@@ -9,7 +9,7 @@ export default Ember.Component.extend({
         nutrition: this.get('nutrition') ? 1 : 0,
         personalWellness: this.get('personalWellness') ? 1 : 0
       };
-      
+      console.log(tasks);
       this.sendAction('createAction', tasks);
 
       this.set('sweat', 0);
