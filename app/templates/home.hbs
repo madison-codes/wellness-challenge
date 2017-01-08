@@ -1,2 +1,6 @@
 <p>home</p>
-{{ task-form tasks=model createAction="submitTasks" }}
+{{#if session.data.authenticated.profile.name 'MaryJane Valade'}}
+  {{ admin-dashboard }}
+{{else}}
+  {{ task-form tasks=model createAction="submitTasks" }}
+{{/if}}
