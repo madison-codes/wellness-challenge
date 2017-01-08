@@ -1,5 +1,23 @@
+
 <div>
   <p>dashboard</p>
+  {{#each model as |task|}}
+    <article class='list-task-per-day'>
+      <h1>{{task.date}}</h1>
+      {{#if task.sweat}}
+        <p>sweat</p>
+      {{/if}}
+      {{#if task.rest}}
+        <p>rest</p>
+      {{/if}}
+      {{#if task.nutrition}}
+        <p>nutrition</p>
+      {{/if}}
+      {{#if task.personalWellness}}
+        <p>personalWellness</p>
+      {{/if}}
+    </article>
+  {{/each}}
 </div>
 
 {{outlet}}
