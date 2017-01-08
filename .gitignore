@@ -57,5 +57,3 @@ publish_to_bower/
 bower_components/
 npm-debug.log
 .ember-cli
-
-auth0-vars.js
