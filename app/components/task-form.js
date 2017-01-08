@@ -9,7 +9,7 @@ export default Ember.Component.extend({
         nutrition: this.get('nutrition') ? 1 : 0,
         personalWellness: this.get('personalWellness') ? 1 : 0
       };
-      
+
       this.sendAction('createAction', tasks);
 
       this.set('sweat', 0);
@@ -17,5 +17,7 @@ export default Ember.Component.extend({
       this.set('nutrition', 0);
       this.set('personalWellness', 0);
     }
+
+    // add action to pull in all data for admin-dashboard to render results
   }
 });
