@@ -1,5 +1,29 @@
 {{yield}}
 
 <div class="admin-dash-container">
-  <h1>hello admin</h1>
+  <h1>Welcome Admin</h1>
+
+  <div class="admin-container">
+    <section class="top-results-container">
+      <h2 class="results-title">Top 10</h2>
+      <span></span>
+      <ol>
+        <li>Madison</li>
+        <li>MJ</li>
+        <li>Adam</li>
+      </ol>
+    </section>
+
+    <section class="icons-column-container">
+      <img src="./assets/sweat_feet.png" alt="Sweat image" class="icons">
+      <img src="./assets/leaf.png" alt="Diet image" class="icons">
+      <img src="./assets/rest_cup.svg" alt="Rest image" class="icons">
+      <img src="./assets/personal_heart.svg" alt="Personal image" class="icons">
+    </section>
+  </div>
+
+  <footer class="admin-footer">
+    <h2 class="footer-title">Select dates to view results</h2>
+    {{date-picker date=mydate valueFormat=’YYYY-MM-DD’ format=’MM-DD-YYYY’}}
+  </footer>
 </div>
