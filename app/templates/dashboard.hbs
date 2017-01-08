@@ -1,14 +1,8 @@
 <div>
   <p>dashboard</p>
-  {{ total-score }}
-  <h1>Total-score</h1>
-    <section>
-      {{#each model as |task|}}
-        <h1>title:</h1>
-        <h1>{{task.sweat}}</h1>
-
-      {{/each}}
-    </section>
+  {{#each model as |task|}}
+    <h1>{{task.sweat}}</h1>
+  {{/each}}
 </div>
 
 {{outlet}}
