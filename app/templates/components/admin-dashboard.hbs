@@ -24,6 +24,14 @@
 
   <footer class="admin-footer">
     <h2 class="footer-title">Select dates to view results</h2>
-    {{date-picker date=mydate valueFormat=’YYYY-MM-DD’ format=’MM-DD-YYYY’}}
+    <article class="start-end-dates">
+      <p class="picker-title">Start: </p>
+      {{date-picker date=date valueFormat='MM-DD-YYYY' format='MM-DD-YYYY'}}
+    </article>
+    <article class="start-end-dates">
+      <p class="picker-title">End: </p>
+      {{date-picker date=date valueFormat='MM-DD-YYYY' format='MM-DD-YYYY'}}
+    </article>
+    <button class="data-submit">Select</button>
   </footer>
 </div>

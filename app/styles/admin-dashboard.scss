@@ -24,11 +24,49 @@
   display: flex;
   flex-direction: column;
   margin: auto;
-  // justify-content: space-between;
-  // width: 50vw;
-  // margin-top: 25px;
 }
 
 .icons {
   margin-top: 10px;
+}
+
+.admin-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: $color-pop-two;
+  color: white;
+}
+
+.start-end-dates {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.picker-title {
+  margin-right: 5px;
+}
+
+.data-submit {
+  background: $color-pop-three;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 100;
+  color: white;
+  cursor: pointer;
+  width: 85px;
+  height: 40px;
+  // margin: auto;
+  // margin-top: 20px;
+  &:hover {
+    background: white;
+    border: 2px solid $color-pop-three;
+    color: $color-pop-three;
+  }
 }
