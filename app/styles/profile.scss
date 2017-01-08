@@ -1,0 +1,15 @@
+@import 'variables';
+@import 'mixins';
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.profile-pic {
+  border-radius: 100px;
+  height: 50px;
+  margin-right: 10px;
+}

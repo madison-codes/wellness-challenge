@@ -15,27 +15,6 @@
 <body>
   {{outlet}}
 </body>
-<footer>
-  <nav>
-    <div class="nav-link home-link">
-      {{#link-to "home"}}
-        <img src="./assets/list.svg" alt="Home">
-      {{/link-to}}
-    </div>
-    <div class="nav-link cal-link">
-      {{#link-to "calendar"}}
-        <img src="./assets/calendar.svg" alt="Calendar">
-      {{/link-to}}
-    </div>
-    <div class="nav-link dash-link">
-      {{#link-to "dashboard"}}
-        <img src="./assets/dashboard.svg" alt="Dashboard">
-      {{/link-to}}
-    </div>
-    <div class="nav-link profile-link">
-      {{#link-to "profile"}}
-        <img src="./assets/profile.svg" alt="Profile">
-      {{/link-to}}
-    </div>
-  </nav>
-</footer>
+{{#if (not-eq session.data.authenticated.profile.name 'Adam Bernard')}}
+  {{student-footer}}
+{{/if}}
