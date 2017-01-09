@@ -1,6 +1,7 @@
 <p>home</p>
-{{#if (eq session.data.authenticated.profile.name 'Adam Bernard')}}
-  {{ admin-dashboard }}
+{{#if (eq session.data.authenticated.profile.name 'hello')}}
+  {{ admin-dashboard session=session }}
 {{else}}
+  {{ student-create session=session student=model createAction="saveUser"}}
   {{ task-form tasks=model createAction="submitTasks" }}
 {{/if}}

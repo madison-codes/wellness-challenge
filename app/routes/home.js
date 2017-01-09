@@ -9,7 +9,10 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
     submitTasks: function(tasks){
       var updatedTasks = this.store.createRecord('task', tasks);
       updatedTasks.save();
+    },
+    saveUser: function(students){
+      var updateUsers = this.store.createRecord('student', students)
+      updateUsers.save()
     }
-    // add action to search specific dates to render results for week or mod
   }
 });
