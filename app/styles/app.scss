@@ -5,6 +5,9 @@
 @import 'task-form';
 @import 'profile';
 @import 'footer';
+@import 'dashboard-parent-graph';
+@import 'dashboard-total-points-band';
+@import 'dashboard-day-list';
 
 html {
   @include clear();

@@ -1,0 +1,41 @@
+@import 'variables';
+@import 'mixins';
+
+#dashboard-day-list {
+  @include clear();
+}
+
+ul {
+  @include clear();
+
+}
+
+.dashboard-task-per-day {
+  @include clear();
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+
+  height: 75px;
+  position: relative;
+  list-style: none;
+  width: 100vw;
+  box-shadow: .5px .5px 1px rgba(0, 0, 0, .2);
+}
+
+.dashboard-task-title {
+  @include clear();
+  left: 10px;
+}
+
+.dashboard-task-progress {
+  @include clear();
+  position: absolute;
+  right: 40px;
+}
+
+.progress {
+  @include clear();
+  margin: 5px;
+  display: inline-block;
+}

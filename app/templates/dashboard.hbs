@@ -1,40 +1,42 @@
 
 <div>
-  <p>dashboard</p>
-
-  <section>
+  <section id='dashboard-parent-graph'>
     {{#each model as |task|}}
       {{task-count-day task.sweat task.rest task.nutrition task.personalWellness}}
       <br>
     {{/each}}
   </section>
 
-  <section>
-    <p>total</p>
+  <section id='dashboard-total-points-band'>
     {{#each model as |task|}}
-      {{task-count-total task.sweat task.rest task.nutrition task.personalWellness}}
-      <br>
+      <div class='point-content'>
+        {{task-count-total task.sweat task.rest task.nutrition task.personalWellness}}
+      </div>
     {{/each}}
   </section>
 
-  <section>
-    {{#each model as |task|}}
-      <article class='list-task-per-day'>
-        <h1>{{task.date}}</h1>
-        {{#if task.sweat}}
-          <p>sweat</p>
-        {{/if}}
-        {{#if task.rest}}
-          <p>rest</p>
-        {{/if}}
-        {{#if task.nutrition}}
-          <p>nutrition</p>
-        {{/if}}
-        {{#if task.personalWellness}}
-          <p>personalWellness</p>
-        {{/if}}
-      </article>
-    {{/each}}
+  <section id='dashboard-day-list'>
+    <ul>
+      {{#each model as |task|}}
+        <li class='dashboard-task-per-day'>
+          <p class='dashboard-task-title'>{{task.date}}</p>
+          <div class='dashboard-task-progress'>
+            {{#if task.sweat}}
+              <img class='progress' src="./assets/progress-sweat.svg" alt="progress-sweat">
+            {{/if}}
+            {{#if task.rest}}
+              <img class='progress' src="./assets/progress-rest.svg" alt="progress-rest">
+            {{/if}}
+            {{#if task.nutrition}}
+              <img class='progress' src="./assets/progress-nutrition.svg" alt="progress-nutrition">
+            {{/if}}
+            {{#if task.personalWellness}}
+              <img class='progress' src="./assets/progress-personal.svg" alt="progress-personal">
+            {{/if}}
+          </div>
+        </li>
+      {{/each}}
+    </ul>
   </section>
 </div>
 
