@@ -1,6 +1,8 @@
 <header>
   <section class="mobile-container">
-    <img src="./assets/info.svg" alt="Info" class="info">
+    <button class="info-button" {{action 'openModal' 'modal' model}}>
+      <img src="./assets/info.svg" alt="Info" class="info">
+    </button>
     <section class="title-container">
       <img src="./assets/turing-logo.png" alt="Turing Logo" class="logo">
       <h1 id="title-main">wellness</h1>
@@ -13,7 +15,7 @@
   </section>
 </header>
 <body>
-  {{outlet}}
+  {{outlet modal}}
 </body>
 {{#if (not-eq session.data.authenticated.profile.name 'MaryJane Valade')}}
   {{student-footer}}

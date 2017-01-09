@@ -4,7 +4,7 @@ import ApplicationRouteMixin from 'ember-simple-auth/mixins/application-route-mi
 export default Ember.Route.extend(ApplicationRouteMixin, {
 
   actions: {
-    login () {
+    login: function () {
       let lockOptions = {
         auth: {
           params: { scope: 'openid' }
@@ -13,8 +13,24 @@ export default Ember.Route.extend(ApplicationRouteMixin, {
       this.get('session').authenticate('simple-auth-authenticator:lock', lockOptions);
     },
 
-    logout () {
+    logout: function () {
       this.get('session').invalidate();
+    },
+
+    openModal: function(infoModal, model) {
+      console.log("openModal");
+      this.controllerFor(infoModal).set('model', model);
+      return this.render(infoModal, {
+        into: 'application',
+        outlet: 'modal'
+      });
+    },
+
+    closeModal: function() {
+      return this.disconnectOutlet({
+        outlet: 'modal',
+        parentView: 'application'
+      });
     }
   }
 });
