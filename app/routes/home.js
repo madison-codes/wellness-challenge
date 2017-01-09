@@ -10,9 +10,14 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
       var updatedTasks = this.store.createRecord('task', tasks);
       updatedTasks.save();
     },
-    saveUser: function(students){
-      var updateUsers = this.store.createRecord('student', students)
-      updateUsers.save()
+    saveUser: function(){
+      var userData = JSON.parse(localStorage.getItem('ember_simple_auth-session'));
+      var studentName = { student: userData.authenticated.profile.name };
+      console.log(userData);
+      console.log(studentName);
+
+      var newUser = this.store.createRecord('student', studentName);
+      newUser.save();
     }
   }
 });
