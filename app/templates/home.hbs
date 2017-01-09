@@ -1,5 +1,5 @@
 <p>home</p>
-{{#if (eq session.data.authenticated.profile.name 'MaryJane ')}}
+{{#if (eq session.data.authenticated.profile.name 'MaryJane Valade')}}
   {{ admin-dashboard session=session }}
 {{else}}
   {{ task-form tasks=model createAction="submitTasks" }}

@@ -1,29 +1,15 @@
 import Ember from 'ember';
-import moment from 'moment';
 
 export default Ember.Component.extend({
   actions: {
     searchDates: function() {
-      // get value of dateStart
-      // get value of dateEnd
-      // console.log(dateStart, dateEnd)
+      let dStart = this.get('dateStart');
+      let dEnd = this.get('dateEnd');
+      let start = Date.parse(dStart);
+      let end = Date.parse(dEnd);
 
-    }
-
-    updateTasks: function() {
-      let date = moment(new Date()).format('ddd');
-      let tasks = {
-        date: date,
-        sweat: this.get('sweat') ? 1 : 0,
-        rest: this.get('rest') ? 1 : 0,
-        nutrition: this.get('nutrition') ? 1 : 0,
-        personalWellness: this.get('personalWellness') ? 1 : 0
-      };
-      this.sendAction('createAction', tasks);
-      this.set('sweat', 0);
-      this.set('rest', 0);
-      this.set('nutrition', 0);
-      this.set('personalWellness', 0);
+      console.log("dateStart:", dStart, start);
+      console.log("dateEnd:", dEnd, end);
     }
   }
 });
