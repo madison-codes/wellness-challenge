@@ -10,8 +10,3 @@ export default Model.extend({
 });
 
 // Ember model relationships --> user has many tasks
-
-
-PUT // entire data object
-
-PATCH // whatever you wanted updated

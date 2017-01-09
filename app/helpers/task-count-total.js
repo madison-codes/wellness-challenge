@@ -1,15 +1,17 @@
 import Ember from 'ember';
 
+let count = 0;
 export function taskCountTotal(params/*, hash*/) {
 
   var sum = params.reduce((a, b) => {
     return a + b;
   });
-  return sum;
+  count =  count + sum;
+  return count;
 }
 
 export default Ember.Helper.helper(taskCountTotal);
-// 
+//
 // App:
 //   User:
 //     Admin: true/ false
