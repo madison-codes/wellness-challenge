@@ -2,6 +2,8 @@
 @import 'mixins';
 
 #dashboard-day-list {
+  height: calc(50vh - 115px);
+  overflow-y: scroll;
 }
 
 ul {
