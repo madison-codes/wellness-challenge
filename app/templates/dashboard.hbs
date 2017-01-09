@@ -1,23 +1,36 @@
 
 <div>
   <p>dashboard</p>
-  {{#each model as |task|}}
-    <article class='list-task-per-day'>
-      <h1>{{task.date}}</h1>
-      {{#if task.sweat}}
-        <p>sweat</p>
-      {{/if}}
-      {{#if task.rest}}
-        <p>rest</p>
-      {{/if}}
-      {{#if task.nutrition}}
-        <p>nutrition</p>
-      {{/if}}
-      {{#if task.personalWellness}}
-        <p>personalWellness</p>
-      {{/if}}
-    </article>
-  {{/each}}
+
+  <section>
+      <p>total</p>
+      <article class='list-task-per-day'>
+        {{#each model as |task|}}
+          {{task-count-total task.sweat task.rest task.nutrition task.personalWellness}}
+          <br>
+        {{/each}}
+      </article>
+  </section>
+
+  <section>
+    {{#each model as |task|}}
+      <article class='list-task-per-day'>
+        <h1>{{task.date}}</h1>
+        {{#if task.sweat}}
+          <p>sweat</p>
+        {{/if}}
+        {{#if task.rest}}
+          <p>rest</p>
+        {{/if}}
+        {{#if task.nutrition}}
+          <p>nutrition</p>
+        {{/if}}
+        {{#if task.personalWellness}}
+          <p>personalWellness</p>
+        {{/if}}
+      </article>
+    {{/each}}
+  </section>
 </div>
 
 {{outlet}}

@@ -8,3 +8,10 @@ export default Model.extend({
   nutrition        : DS.attr('number'),
   personalWellness : DS.attr('number')
 });
+
+// Ember model relationships --> user has many tasks
+
+
+PUT // entire data object
+
+PATCH // whatever you wanted updated
