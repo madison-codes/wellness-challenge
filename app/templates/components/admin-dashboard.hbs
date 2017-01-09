@@ -1,20 +1,19 @@
 {{yield}}
 
 <div class="admin-dash-container">
-  <h1>Welcome Admin</h1>
+  <h1 class="admin-title">Welcome {{session.data.authenticated.profile.name}}</h1>
 
   <div class="admin-container">
     <section class="top-results-container">
       <h2 class="results-title">Top 10</h2>
-      <span></span>
       <ol>
-        <li>Madison</li>
-        <li>MJ</li>
-        <li>Adam</li>
+        <li class="results-users">Madison</li>
+        <li class="results-users">MJ</li>
+        <li class="results-users">Adam</li>
       </ol>
     </section>
 
-    <section class="icons-column-container">
+    <section class="icons-container">
       <img src="./assets/sweat_feet.png" alt="Sweat image" class="icons">
       <img src="./assets/leaf.png" alt="Diet image" class="icons">
       <img src="./assets/rest_cup.svg" alt="Rest image" class="icons">
@@ -26,12 +25,13 @@
     <h2 class="footer-title">Select dates to view results</h2>
     <article class="start-end-dates">
       <p class="picker-title">Start: </p>
-      {{date-picker date=date valueFormat='MM-DD-YYYY' format='MM-DD-YYYY'}}
+      {{date-picker date=dateStart valueFormat='MM-DD-YYYY' format='MM-DD-YYYY'}}
     </article>
     <article class="start-end-dates">
       <p class="picker-title">End: </p>
-      {{date-picker date=date valueFormat='MM-DD-YYYY' format='MM-DD-YYYY'}}
+      {{date-picker date=dateEnd valueFormat='MM-DD-YYYY' format='MM-DD-YYYY'}}
     </article>
-    <button class="data-submit">Select</button>
+    <button class="data-submit" {{action 'searchDates'}}>Select</button>
+    {{!-- write function/action to take start and end dates values (as milliseconds using moment) and get data for those dates, then console log the dates --}}
   </footer>
 </div>

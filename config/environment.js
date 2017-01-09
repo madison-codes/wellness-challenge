@@ -2,7 +2,7 @@
 let auth0 = require('../app/auth0-vars');
 
 module.exports = function(environment) {
-  var ENV = {
+  let ENV = {
     modulePrefix: 'wellness-challenge',
     environment: environment,
     rootURL: '/',
