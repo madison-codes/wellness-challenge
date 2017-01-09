@@ -1,15 +1,37 @@
 @import 'variables';
 @import 'mixins';
 
-.profile-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-left: 20px;
+#profile-container {
+  // display: flex;
+  // flex-direction: row;
+  // align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  color: white;
+}
+
+#profile-container p {
+  @include clear();
+  font-weight: 100;
+  line-spacing: 1.2;
+}
+
+.profile-info {
+  background-color: $color-main;
+  padding: 10px;
+}
+
+.profile-name {
+  font-size: 2rem;
 }
 
 .profile-pic {
-  border-radius: 100px;
-  height: 50px;
+  width: 500px;
   margin-right: 10px;
+}
+
+.profile-message {
+  font-size: 1.2rem;
+  margin-left: 40px;
 }

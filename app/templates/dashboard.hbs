@@ -7,13 +7,7 @@
     {{/each}}
   </section>
 
-  <section id='dashboard-total-points-band'>
-    {{#each model as |task|}}
-      <div class='point-content'>
-        {{task-count-total task.sweat task.rest task.nutrition task.personalWellness}}
-      </div>
-    {{/each}}
-  </section>
+  {{total-points-band tasks=model}}
 
   <section id='dashboard-day-list'>
     <ul>

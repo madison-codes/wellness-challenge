@@ -1,7 +1,8 @@
-<p>profile</p>
-<section class="profile-container">
-  <img src='{{session.data.authenticated.profile.picture}}' class="profile-pic">
-  <h3>{{session.data.authenticated.profile.name}}</h3>
+<section id="profile-container">
+  <img src='{{session.data.authenticated.profile.picture}}' class='profile-pic'>
+  <article class='profile-info'>
+    <p class='profile-name'>Hello {{session.data.authenticated.profile.name}},</p>
+    <p class='profile-message'>Tell the world you achievements.</p>
+  </article>
 </section>
-
 {{outlet}}
