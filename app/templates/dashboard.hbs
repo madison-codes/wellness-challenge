@@ -3,13 +3,18 @@
   <p>dashboard</p>
 
   <section>
-      <p>total</p>
-      <article class='list-task-per-day'>
-        {{#each model as |task|}}
-          {{task-count-total task.sweat task.rest task.nutrition task.personalWellness}}
-          <br>
-        {{/each}}
-      </article>
+    {{#each model as |task|}}
+      {{task-count-day task.sweat task.rest task.nutrition task.personalWellness}}
+      <br>
+    {{/each}}
+  </section>
+
+  <section>
+    <p>total</p>
+    {{#each model as |task|}}
+      {{task-count-total task.sweat task.rest task.nutrition task.personalWellness}}
+      <br>
+    {{/each}}
   </section>
 
   <section>
