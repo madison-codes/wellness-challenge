@@ -15,21 +15,6 @@ export default Ember.Route.extend(ApplicationRouteMixin, {
 
     logout: function() {
       this.get('session').invalidate();
-    },
-
-    openModal: function(infoModal, model) {
-      this.render(infoModal, {
-        into: 'application',
-        outlet: 'modal',
-        model: model
-      });
-    },
-
-    removeModal: function() {
-      this.disconnectOutlet({
-        outlet: 'modal',
-        parentView: 'application'
-      });
     }
   }
 });
