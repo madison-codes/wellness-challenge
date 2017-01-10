@@ -13,13 +13,4 @@ test('it renders', function(assert) {
   this.render(hbs`{{student-footer}}`);
 
   assert.equal(this.$().text().trim(), '');
-
-  // Template block usage:
-  this.render(hbs`
-    {{#student-footer}}
-      template block text
-    {{/student-footer}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
 });

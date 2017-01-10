@@ -12,14 +12,5 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{task-form}}`);
 
-  assert.equal(this.$().text().trim(), '');
-
-  // Template block usage:
-  this.render(hbs`
-    {{#task-form}}
-      template block text
-    {{/task-form}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.equal(this.$().text().trim(), 'Sweat Rest Nutrition Personal Wellness Submit');
 });

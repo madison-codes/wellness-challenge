@@ -12,14 +12,5 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{total-points-band}}`);
 
-  assert.equal(this.$().text().trim(), '');
-
-  // Template block usage:
-  this.render(hbs`
-    {{#total-points-band}}
-      template block text
-    {{/total-points-band}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.equal(this.$().text().trim(), 'Total Points');
 });
