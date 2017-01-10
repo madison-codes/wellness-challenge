@@ -1,6 +1,6 @@
 <section id='dashboard-total-points-band'>
   <h1>Total Points</h1>
-  <p {{action 'updateTasks' model}}> {{ updateTasks }}</p>
+  <p{{action 'sum' model}}>{{ model.sum() }}</p>
   <!-- {{#each model as |task|}}
     <div class='point-content'>
       {{task-count-total task.sweat task.rest task.nutrition task.personalWellness}}
