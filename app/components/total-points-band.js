@@ -1,11 +1,12 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-
-  // updateTasks: function (tasks) {
-  //   // this.route.get('tasks');
-  //   // this.controller.get('tasks');
-  //   return tasks;
+  // model(){
+  //   return this.route.get('tasks');
   // },
-
+  actions: {
+    updateTasks: function(tasks){
+      return this.route.get('tasks');
+    }
+  }
 });
