@@ -1,6 +1,5 @@
 <header>
   <section class="mobile-container">
-    <img src="./assets/info.svg" alt="Info" class="info">
     <section class="title-container">
       <img src="./assets/turing-logo.png" alt="Turing Logo" class="logo">
       <h1 id="title-main">wellness</h1>
@@ -15,6 +14,6 @@
 <body>
   {{outlet}}
 </body>
-{{#if (not-eq session.data.authenticated.profile.name 'Adam Bernard')}}
+{{#if (not-eq session.data.authenticated.profile.name 'MaryJane ')}}
   {{student-footer}}
 {{/if}}

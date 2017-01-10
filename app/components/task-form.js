@@ -4,8 +4,8 @@ import moment from 'moment';
 export default Ember.Component.extend({
   actions: {
     updateTasks: function() {
-      var date = moment(new Date()).format('ddd');
-      var tasks = {
+      let date = moment(new Date()).format('ddd');
+      let tasks = {
         date: date,
         sweat: this.get('sweat') ? 1 : 0,
         rest: this.get('rest') ? 1 : 0,
