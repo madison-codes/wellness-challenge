@@ -1,4 +1,5 @@
 /* jshint node: true */
+let auth0 = require('../app/auth0-vars');
 
 module.exports = function(environment) {
   var ENV = {
@@ -35,8 +36,8 @@ module.exports = function(environment) {
     };
 
     ENV['auth0-ember-simple-auth'] = {
-      clientID: CLIENT_ID,
-      domain: DOMAIN
+      clientID: auth0.CLIENT_ID,
+      domain: auth0.DOMAIN
     };
   }
 
