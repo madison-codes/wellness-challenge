@@ -5,18 +5,7 @@
     {{#each model as |task|}}
     <section class='graph'>
       <article class='graph-element'>
-        {{task.date}}
-        {{task-count-day task.sweat task.rest task.nutrition task.personalWellness}}
-        <div
-          style="
-            height:700px;
-            width:40px;
-            background-color: #FFFFFF;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-            margin: 0px;
-            opacity: .7;
-          "></div>
+          {{task.date}}
       </article>
     </section>
     {{/each}}
