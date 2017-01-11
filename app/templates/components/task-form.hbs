@@ -1,23 +1,23 @@
 <div>
   <form class="task-form" {{action 'updateTasks' model on='submit'}}>
     <label class="task">
-      {{ input type="checkbox" class="checks" name="sweat" checked=sweat }}
-      Sweat
+      {{input type="checkbox" class="checks" name="sweat" checked=sweat}}
+      <span class="spec-sweat">Sweat</span>
       <img src="./assets/sweat_feet.png" alt="Sweat image" class="task-icons">
     </label>
     <label class="task">
-      {{ input type="checkbox" class="checks" name="rest" checked=rest }}
-      Rest
+      {{input type="checkbox" class="checks" name="rest" checked=rest}}
+      <span class="spec-rest">Rest</span>
       <img src="./assets/rest_cup.svg" alt="Rest image" class="task-icons">
     </label>
     <label class="task">
-      {{ input type="checkbox" class="checks" name="nutrition" checked=nutrition }}
-      Nutrition
+      {{input type="checkbox" class="checks" name="nutrition" checked=nutrition}}
+      <span class="spec-diet">Nutrition</span>
       <img src="./assets/leaf.png" alt="Diet image" class="task-icons">
     </label>
     <label class="task">
-      {{ input type="checkbox" class="checks" name="personalWellness" checked=personalWellness }}
-      Personal Wellness
+      {{input type="checkbox" class="checks" name="personalWellness" checked=personalWellness}}
+      <span class="spec-pw">Personal Wellness</span>
       <img src="./assets/personal_heart.svg" alt="Personal image" class="task-icons">
     </label>
     <button class="submit-button">Submit</button>

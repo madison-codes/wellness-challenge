@@ -54,6 +54,7 @@ module.exports = function(environment) {
 
   ENV.remote_couch = 'https://ab255.cloudant.com/wellness';
   ENV.local_couch = 'wellness';
+
   if (environment === 'production') {
     ENV.rootURL = '/';
     ENV.remote_couch = 'https://ab255.cloudant.com/wellness';

@@ -1,6 +1,6 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('student', 'Unit | Model | student', {
+moduleForModel('task', 'Unit | Model | task', {
   needs: []
 });
 
@@ -11,7 +11,7 @@ test('it exists', function(assert) {
 });
 
 test('should return undefined without valid input', function(assert) {
-  const student = this.subject({});
+  const task = this.subject({});
 
-  assert.equal(student.get('student'), undefined, 'student attributes throw error if empty');
+  assert.equal(task.get('student'), undefined, 'task attributes throw error if empty');
 });

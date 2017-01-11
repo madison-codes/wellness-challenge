@@ -13,11 +13,11 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
       updatedTask.save().then(() => student.save());
     },
     saveUser: function(){
-      var userData = JSON.parse(localStorage.getItem('ember_simple_auth-session'));
-      var studentNameString = userData.authenticated.profile.name
-      var studentName = { student: studentNameString };
-      var Students = this.store.findAll('student')
-      console.log(Students)
+      let userData = JSON.parse(localStorage.getItem('ember_simple_auth-session'));
+      let studentNameString = userData.authenticated.profile.name;
+      let studentName = { student: studentNameString };
+      let Students = this.store.findAll('student');
+      console.log(Students);
     }
   }
 });
