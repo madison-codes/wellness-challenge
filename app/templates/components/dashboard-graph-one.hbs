@@ -1,7 +1,10 @@
-<section id='dashboard-parent-graph'>
-    <!-- {{ember-chart data=model type='bar' width=200 height=200 class='center-block'}} -->
-  {{#each model as |task|}}
-    {{task.date}}
-  {{/each}}
+<section id='dashboard-parent-graph' {{ action 'graphData' model}}>
+  <div class='graph container'>
+    <!-- {{ember-chart data=graphData type='bar' width=200 height=200 class='center-block' tooltip=null}} -->
+    {{rest.length}}
+    {{#each model as |task|}}
+      {{task.date}}
+    {{/each}}
+  </div>
 </section>
 {{yield}}
