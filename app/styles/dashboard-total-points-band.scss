@@ -5,7 +5,8 @@
   @include clear();
   display: flex;
   align-items: center;
-  height: 35px;
+  height: 40px;
+  padding: 5px;
   background-color: $color-main;
   color: white;
   overflow: scroll;
@@ -13,4 +14,10 @@
 
 .point-content {
   padding: 20px;
+}
+
+.dashboard-band-text {
+  margin: 0;
+  padding: 0;
+  font-size: .9rem;
 }
