@@ -1,0 +1,7 @@
+@import 'variables';
+@import 'mixins';
+
+#dashboard-parent-graph {
+  background: linear-gradient($color-pop-five, $color-pop-seven);
+  height: 50vh;
+}

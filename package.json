@@ -22,6 +22,7 @@
     "auth0-ember-simple-auth": "git://github.com/auth0/auth0-ember-simple-auth.git#da157a737e534f8881a82420237c2b4ee9f144d0",
     "broccoli-asset-rev": "^2.4.2",
     "ember-ajax": "^2.0.1",
+    "ember-charts": "1.2.0",
     "ember-cli": "2.8.0",
     "ember-cli-app-version": "^1.0.0",
     "ember-cli-babel": "^5.1.6",
