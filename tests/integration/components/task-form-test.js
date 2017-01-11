@@ -5,12 +5,14 @@ moduleForComponent('task-form', 'Integration | Component | task form', {
   integration: true
 });
 
-test('it renders', function(assert) {
-
-  // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });
-
+test('it renders with checkbox label names', function(assert) {
   this.render(hbs`{{task-form}}`);
 
-  assert.equal(this.$().text().trim(), 'Sweat Rest Nutrition Personal Wellness Submit');
+  assert.equal(this.$('.spec-sweat').text(), 'Sweat');
+
+  assert.equal(this.$('.spec-rest').text(), 'Rest');
+
+  assert.equal(this.$('.spec-diet').text(), 'Nutrition');
+
+  assert.equal(this.$('.spec-pw').text(), 'Personal Wellness');
 });

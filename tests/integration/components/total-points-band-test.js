@@ -12,5 +12,5 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{total-points-band}}`);
 
-  assert.equal(this.$().text().trim(), 'Total Points');
+  assert.equal(this.$().text().trim(), 'You have participaed 0 days. Keep up the good work.');
 });
