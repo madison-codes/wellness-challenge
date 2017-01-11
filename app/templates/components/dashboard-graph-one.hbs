@@ -1,7 +1,7 @@
 <section id='dashboard-parent-graph'>
+    <!-- {{ember-chart data=model type='bar' width=200 height=200 class='center-block'}} -->
   {{#each model as |task|}}
-    {{task-count-day task.sweat task.rest task.nutrition task.personalWellness}}
-    <br>
+    {{task.date}}
   {{/each}}
 </section>
 {{yield}}

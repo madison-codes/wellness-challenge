@@ -1,0 +1,23 @@
+<section id='dashboard-day-list'>
+  <ul>
+    {{#each model as |task|}}
+      <li class='dashboard-task-per-day'>
+        <p class='dashboard-task-title'>{{task.date}}</p>
+        <div class='dashboard-task-progress'>
+          {{#if task.sweat}}
+            <img class='progress' src="./assets/progress-sweat.svg" alt="progress-sweat">
+          {{/if}}
+          {{#if task.rest}}
+            <img class='progress' src="./assets/progress-rest.svg" alt="progress-rest">
+          {{/if}}
+          {{#if task.nutrition}}
+            <img class='progress' src="./assets/progress-nutrition.svg" alt="progress-nutrition">
+          {{/if}}
+          {{#if task.personalWellness}}
+            <img class='progress' src="./assets/progress-personal.svg" alt="progress-personal">
+          {{/if}}
+        </div>
+      </li>
+    {{/each}}
+  </ul>
+</section>
