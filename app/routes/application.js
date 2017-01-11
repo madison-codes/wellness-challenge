@@ -11,7 +11,6 @@ export default Ember.Route.extend(ApplicationRouteMixin, {
       };
       this.get('session').authenticate('simple-auth-authenticator:lock', lockOptions);
     },
-
     logout: function() {
       this.get('session').invalidate();
     }

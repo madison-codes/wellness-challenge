@@ -7,9 +7,6 @@ export default Ember.Component.extend({
       let dEnd = this.get('dateEnd');
       let start = Date.parse(dStart);
       let end = Date.parse(dEnd);
-
-      console.log("dateStart:", dStart, start);
-      console.log("dateEnd:", dEnd, end);
     }
   }
 });
