@@ -8,9 +8,6 @@ header {
   width: 100vw;
   height: 70px;
   background-color: $color-main;
-  // @media screen and (max-width: 400px) {
-  //   justify-content: space-between;
-  // }
 }
 
 .mobile-container {
@@ -65,7 +62,6 @@ header {
   background: $color-pop-three;
   border: 2px solid white;
   border-radius: 30px;
-  // font-family: ShreeDev0714-Bold;
   font-size: 18px;
   font-weight: 100;
   color: white;
