@@ -4,8 +4,11 @@ import moment from 'moment';
 export default Ember.Component.extend({
   actions: {
     updateTasks: function() {
-      let date = moment(new Date()).format('ddd');
-      let tasks = {
+      let userData = JSON.parse(localStorage.getItem('ember_simple_auth-session'));
+      let studentName = userData.authenticated.profile.name;
+      var date = moment(new Date()).format('ddd');
+      var tasks = {
+        student: studentName,
         date: date,
         sweat: this.get('sweat') ? 1 : 0,
         rest: this.get('rest') ? 1 : 0,

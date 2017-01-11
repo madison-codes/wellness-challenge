@@ -1,5 +1,6 @@
-{{#if (eq session.data.authenticated.profile.name 'MaryJane ')}}
+{{#if (eq session.data.authenticated.profile.name 'Allison Reu Singer')}}
   {{ admin-dashboard session=session }}
 {{else}}
+  {{ student-create student=model createAction="saveUser"}}
   {{ task-form tasks=model createAction="submitTasks" }}
 {{/if}}

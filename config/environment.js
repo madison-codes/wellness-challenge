@@ -57,6 +57,7 @@ module.exports = function(environment) {
   if (environment === 'production') {
     ENV.rootURL = '/';
     ENV.remote_couch = 'https://ab255.cloudant.com/wellness';
+    ENV.local_couch = 'wellness';
     ENV['ember-simple-auth'] = {
       authenticationRoute: 'index',
       routeAfterAuthentication: 'home',
@@ -64,8 +65,8 @@ module.exports = function(environment) {
     };
 
     ENV['auth0-ember-simple-auth'] = {
-      clientID: auth0.CLIENT_ID,
-      domain: auth0.DOMAIN
+      clientID: CLIENT_ID,
+      domain: DOMAIN
     };
   }
 
