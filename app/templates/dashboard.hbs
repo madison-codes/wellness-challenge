@@ -1,11 +1,6 @@
 
 <div>
-  <section id='dashboard-parent-graph'>
-    {{#each model as |task|}}
-      {{task-count-day task.sweat task.rest task.nutrition task.personalWellness}}
-      <br>
-    {{/each}}
-  </section>
+  {{ dashboard-graph-one model=model}}
 
   {{total-points-band model=model}}
 

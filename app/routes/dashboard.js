@@ -6,10 +6,3 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
     return this.store.findAll('task');
   }
 });
-  // actions: {
-    // taskCount: function(tasks){
-    //   return tasks;
-    // }
-    // add action to search specific dates to render results for week or mod
-  // }
-// });
