@@ -1,0 +1,16 @@
+@import 'variables';
+@import 'mixins';
+
+#dashboard-total-points-band {
+  @include clear();
+  display: flex;
+  align-items: center;
+  height: 35px;
+  background-color: $color-main;
+  color: white;
+  overflow: scroll;
+}
+
+.point-content {
+  padding: 20px;
+}

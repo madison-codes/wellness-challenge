@@ -1,7 +1,7 @@
 import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 
-moduleForComponent('task-form', 'Integration | Component | task form', {
+moduleForComponent('total-points-band', 'Integration | Component | total points band', {
   integration: true
 });
 
@@ -10,7 +10,7 @@ test('it renders', function(assert) {
   // Set any properties with this.set('myProperty', 'value');
   // Handle any actions with this.on('myAction', function(val) { ... });
 
-  this.render(hbs`{{task-form}}`);
+  this.render(hbs`{{total-points-band}}`);
 
-  assert.equal(this.$().text().trim(), 'Sweat Rest Nutrition Personal Wellness Submit');
+  assert.equal(this.$().text().trim(), 'Total Points');
 });

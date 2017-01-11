@@ -7,6 +7,9 @@
 @import 'profile';
 @import 'directions';
 @import 'footer';
+@import 'dashboard-parent-graph';
+@import 'dashboard-total-points-band';
+@import 'dashboard-day-list';
 
 html {
   @include clear();

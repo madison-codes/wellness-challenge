@@ -12,14 +12,5 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{admin-dashboard}}`);
 
-  assert.equal(this.$().text().trim(), '');
-
-  // Template block usage:
-  this.render(hbs`
-    {{#admin-dashboard}}
-      template block text
-    {{/admin-dashboard}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.equal(this.$().text().trim(), 'Welcome Top 10 Madison MJ Adam Select dates to view results Start: End: Select');
 });
