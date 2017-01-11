@@ -1,5 +1,36 @@
 {{yield}}
 
 <div class="admin-dash-container">
-  <h1>hello admin {{session.data.authenticated.profile.name}}</h1>
+  <h1 class="admin-title">Welcome {{session.data.authenticated.profile.name}}</h1>
+
+  <div class="admin-container">
+    <section class="top-results-container">
+      <h2 class="results-title">Top 10</h2>
+      <ol>
+        <li class="results-users">Madison</li>
+        <li class="results-users">MJ</li>
+        <li class="results-users">Adam</li>
+      </ol>
+    </section>
+
+    <section class="icons-container">
+      <img src="./assets/sweat_feet.png" alt="Sweat image" class="icons">
+      <img src="./assets/leaf.png" alt="Diet image" class="icons">
+      <img src="./assets/rest_cup.svg" alt="Rest image" class="icons">
+      <img src="./assets/personal_heart.svg" alt="Personal image" class="icons">
+    </section>
+  </div>
+
+  <footer class="admin-footer">
+    <h2 class="footer-title">Select dates to view results</h2>
+    <article class="start-end-dates">
+      <p class="picker-title">Start: </p>
+      {{date-picker date=dateStart valueFormat='MM-DD-YYYY' format='MM-DD-YYYY'}}
+    </article>
+    <article class="start-end-dates">
+      <p class="picker-title">End: </p>
+      {{date-picker date=dateEnd valueFormat='MM-DD-YYYY' format='MM-DD-YYYY'}}
+    </article>
+    <button class="data-submit" {{action 'searchDates'}}>Select</button>
+  </footer>
 </div>

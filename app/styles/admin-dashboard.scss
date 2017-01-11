@@ -1,0 +1,92 @@
+@import 'variables';
+@import 'mixins';
+
+.admin-dash-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.admin-title {
+  color: $color-pop-six;
+  font-weight: 400;
+  margin-left: 20px;
+}
+
+.admin-container {
+  margin-bottom: 20px;
+}
+
+.top-results-container {
+  background-image: linear-gradient(#0EE1DE 50%, #2F9BE2);
+  height: 175px;
+  width: 40%;
+  margin: auto;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.results-title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 2em;
+  padding-top: 10px;
+}
+
+.results-users {
+  font-size: 1.5em;
+}
+
+.icons {
+  margin-top: 20px;
+}
+
+.admin-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: $color-pop-two;
+  color: white;
+  @media screen and (max-width: 750px) {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    position: relative;
+    padding-top: 0;
+  }
+}
+
+.footer-title {
+  font-weight: 400;
+}
+
+.start-end-dates {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.picker-title {
+  margin-right: 5px;
+}
+
+.data-submit {
+  background: $color-pop-three;
+  border: 2px solid white;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 100;
+  color: white;
+  cursor: pointer;
+  width: 85px;
+  height: 40px;
+  &:hover {
+    background: white;
+    border: 2px solid $color-pop-three;
+    color: $color-pop-three;
+  }
+}

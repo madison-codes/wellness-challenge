@@ -25,8 +25,15 @@ header {
   }
 }
 
+.info-button {
+  border: none;
+  background: none;
+  width: 11px;
+  cursor: pointer;
+}
+
 .info {
-  height: 35px;
+  height: 30px;
   margin-left: 20px;
   @media screen and (max-width: 400px) {
     margin-left: 0;
@@ -41,7 +48,7 @@ header {
 }
 
 .logo {
-  height: 60px;
+  height: 55px;
   margin-right: 20px;
   @media screen and (max-width: 400px) {
     margin-right: 5px;
@@ -57,13 +64,15 @@ header {
 .auth {
   background: $color-pop-three;
   border: 2px solid white;
-  border-radius: 5px;
+  border-radius: 30px;
   // font-family: ShreeDev0714-Bold;
   font-size: 18px;
   font-weight: 100;
   color: white;
   cursor: pointer;
   margin-right: 20px;
+  width: 85px;
+  height: 40px;
   &:hover {
     background: white;
     border: 2px solid $color-pop-three;
