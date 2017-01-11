@@ -1,5 +1,13 @@
-import { test } from 'qunit';
+import { test, skip } from 'qunit';
 import moduleForAcceptance from 'wellness-challenge/tests/helpers/module-for-acceptance';
+import Ember from 'ember';
+import { describe, it, beforeEach, afterEach } from 'mocha';
+import { expect } from 'chai';
+import startApp from '../helpers/start-app';
+import Pretender from 'pretender';
+import { invalidateSession, authenticateSession, currentSession } from '../helpers/ember-simple-auth';
+import destroyApp from '../helpers/destroy-app';
+import config from '../../config/environment';
 
 moduleForAcceptance('Acceptance | wellness');
 
@@ -11,6 +19,21 @@ test('visiting /login', function(assert) {
   });
 });
 
+const { tryInvoke } = Ember;
+
+describe('Acceptance: Authentication', function() {
+  let application;
+  let server;
+
+  beforeEach(function() {
+    application = startApp();
+  });
+
+  afterEach(function() {
+    tryInvoke(server, 'shutdown');
+    destroyApp(application);
+  });
+});
 
 skip('clicking on checkboxes and "submit" button registers daily tasks to database', function(assert) {
 // visit('/login');
